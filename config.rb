@@ -1,8 +1,8 @@
 ###
 # Blog settings
 ###
-
 # Time.zone = "UTC"
+
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -43,9 +43,9 @@ page "/sitemap.xml", layout: false
 
 # Change Compass configuration
 # config :development do
-  compass_config do |config|
-    config.sass_options = {:debug_info => true}
-  end
+#  compass_config do |config|
+#    config.sass_options = {:debug_info => true}
+#  end
 # end
 
 ###
@@ -155,10 +155,10 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+   activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+   activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
